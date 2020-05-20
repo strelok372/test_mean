@@ -1,0 +1,13 @@
+<h1>Registration</h1>
+<form (ngSubmit)="onRegisterSubmit()">
+  <label>Username:<br>
+    <input type="text" [(ngModel)]="username" name="userName" maxlength="50" required/>
+  </label><br>
+  <label>Login:<br>
+    <input type="text" [(ngModel)]="login" name="userLogin" maxlength="32" required/>
+  </label><br>
+  <label>Password:<br>
+    <input type="password" [(ngModel)]="password" name="userPass" maxlength="32" required/>
+  </label><br>
+  <input type="submit" value="Submit"/>
+</form>

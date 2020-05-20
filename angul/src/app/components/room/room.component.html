@@ -1,0 +1,19 @@
+<h1>Start your poker</h1><br>
+
+<label>Room name:<br>
+  <input id="room_name" type="text">
+</label><br>
+
+<label >Password:<br>
+  <input [disabled]="!disabled" id="room_password" type="password">
+</label>
+
+<div class="custom-control custom-switch">
+  <input type="checkbox" id="use_pass" [(ngModel)]="disabled" class="custom-control-input">
+  <label class="custom-control-label" for="use_pass">use password</label>
+</div>
+
+<div>
+  <button type="submit" class="btn">Create</button>
+  <button type="submit" class="btn">Join</button>
+</div>
